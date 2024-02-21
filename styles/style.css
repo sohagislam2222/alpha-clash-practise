@@ -13,7 +13,7 @@ body{
 }
 
 main{
- background-image: url(/images/background.png);
+ background-image: url(../images/background.png);
 background-size: auto;
 background-repeat: no-repeat;
 background-position: center;
