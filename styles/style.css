@@ -1,0 +1,313 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color:#010313;
+   max-width: 1170px;
+   margin: 0px auto;
+}
+
+main{
+ background-image: url(/images/background.png);
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+ height: 100vh;
+ margin: auto;
+ 
+}
+#home-page{
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.first-section{
+    height: 100%;
+display: flex;
+ flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.head-title{
+  
+  font-size: 100px;
+font-weight: bold;
+color: aliceblue;
+margin-bottom: 20px;
+
+}
+p{
+  color: aliceblue;
+}
+
+.play-button{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  background-color: aqua;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+
+.arth-board-container{
+  display: flex;
+  justify-content: center;
+}
+.arth-board{
+width: 70%;
+height: 300px;
+background-color: rgba(128, 128, 128, 0.577);
+color: black;
+border-radius: 20px;
+border: 10px solid darkmagenta;
+display: flex;
+align-items: center;
+  flex-direction: column;
+
+}
+.arth-board-title{
+  background-color: #010313;
+  color: white;
+  width: 60%;
+  height: 50px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alphabet{
+  text-align: center;
+  font-size: 150px;
+  font-weight: bolder;
+}
+
+.kbd-first-line{
+  /* flex justify-center gap-1 my-1 w-full */
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-bottom: 10px;
+margin-top: 50px;
+width: 100%;
+}
+.kbd-second-line{
+  display: flex;
+justify-content: center;
+gap: 10px;
+margin: 10px 0px;
+width: 100%;
+}
+
+.kbd-third-line{
+  display: flex;
+justify-content: center;
+gap: 10px;
+margin: 10px 0px;
+width: 100%;
+}
+
+.kbd{
+  background-color: aliceblue;
+  color: #010313;
+  padding: 10px 25px;
+  border-radius: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.button-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+#play-ground{
+  display: none;
+}
+
+.score-board{
+ 
+width: 400px;
+height: 300px;
+background-color: rgba(127, 255, 212, 0.615);
+color: #010313;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+border-radius: 15px;
+text-align: center;
+
+
+}
+
+.score-board-text{
+font-size: 50px;
+margin-top: 25px;
+font-weight: 800;
+color: #000;
+}
+
+.score-board-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ width: 100%;
+  height: 100%;
+}
+
+section{
+  width: 100%;
+  height: 100%;
+}
+
+#third-section{
+  display: none;
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  
+
+  .head-title{
+  
+  font-size: 60px;
+ text-align: center;
+}
+p{
+  text-align: center;
+}
+
+.kbd-first-line{
+
+display: flex;
+justify-content: center;
+gap: 4px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+margin: 0 auto;
+}
+
+.kbd-second-line{
+ display: flex;
+justify-content: center;
+gap: 4px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+margin: 0 auto;
+}
+
+
+.kbd-third-line{
+  display: flex;
+justify-content: center;
+gap: 4px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+margin: 0 auto;
+}
+
+
+.kbd{
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.arth-board{
+height: 200px;
+}
+.alphabet{
+  text-align: center;
+  font-size: 120px;
+  font-weight: bolder;
+}
+
+}
+
+
+
+@media screen and (max-width:600px) {
+  .head-title{
+  text-align: center;
+  font-size: 40px;
+margin-bottom: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+.kbd-first-line{
+
+display: flex;
+justify-content: center;
+gap: 4px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+margin: 0 auto;
+}
+
+.kbd-second-line{
+ display: flex;
+justify-content: center;
+gap: 4px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+margin: 0 auto;
+}
+
+
+.kbd-third-line{
+  display: flex;
+justify-content: center;
+gap: 4px;
+margin-bottom: 5px;
+margin-top: 5px;
+width: 90%;
+margin: 0 auto;
+}
+
+
+.kbd{
+  background-color: aliceblue;
+  color: #010313;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.arth-board{
+height: 200px;
+}
+.alphabet{
+  text-align: center;
+  font-size: 100px;
+  font-weight: bolder;
+}
+.score-board{
+ 
+width:80%;
+height: 60%;}
+
+}
