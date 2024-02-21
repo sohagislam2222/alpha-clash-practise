@@ -13,61 +13,68 @@
 
     <section id="home-page">
       <div class="first-section">
-        <h1 id="title" class="head-title">Alphabet Clash Pro Game</h1>
-        <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+        <h1 id="title" class="head-title">Alphabet Clash <br> Pro Game</h1>
+        <h3 class="pc">For PC</h3>
+        <p>Unleash Your Keyboard Kung Fu : Click “PLAY NOW” to Play</p>
+
         <button id="play-now" class="play-button">PLAY NOW</button>
       </div>
     </section>
     <section id="play-ground">
-      <div class="arth-board-container">
-        <div class="arth-board">
-          <p class="arth-board-title">Don't watch keyboard while playing...</p>
-          <h1 id="current-alphabet" class="alphabet">w</h1>
+      <div class="play-ground">
+        <div class="arth-board-container">
+          <div class="arth-board">
+            <p class="arth-board-title">Don't watch keyboard while playing... <br>
+              To close the game press on 'Escape' button.
+            </p>
+            <h1 id="current-alphabet" class="alphabet">w</h1>
+          </div>
+        </div>
+
+        <div class="kbd-container">
+          <div>
+            <div class="kbd-first-line">
+              <kbd id="q" class="kbd">q</kbd>
+              <kbd id="w" class="kbd">w</kbd>
+              <kbd id="e" class="kbd">e</kbd>
+              <kbd id="r" class="kbd">r</kbd>
+              <kbd id="t" class="kbd">t</kbd>
+              <kbd id="y" class="kbd">y</kbd>
+              <kbd id="u" class="kbd">u</kbd>
+              <kbd id="i" class="kbd">i</kbd>
+              <kbd id="o" class="kbd">o</kbd>
+              <kbd id="p" class="kbd">p</kbd>
+            </div>
+            <div class="kbd-second-line">
+              <kbd id="a" class="kbd">a</kbd>
+              <kbd id="s" class="kbd">s</kbd>
+              <kbd id="d" class="kbd">d</kbd>
+              <kbd id="f" class="kbd">f</kbd>
+              <kbd id="g" class="kbd">g</kbd>
+              <kbd id="h" class="kbd">h</kbd>
+              <kbd id="j" class="kbd">j</kbd>
+              <kbd id="k" class="kbd">k</kbd>
+              <kbd id="l" class="kbd">l</kbd>
+            </div>
+            <div class="kbd-third-line">
+              <kbd id="z" class="kbd">z</kbd>
+              <kbd id="x" class="kbd">x</kbd>
+              <kbd id="c" class="kbd">c</kbd>
+              <kbd id="v" class="kbd">v</kbd>
+              <kbd id="b" class="kbd">b</kbd>
+              <kbd id="n" class="kbd">n</kbd>
+              <kbd id="m" class="kbd">m</kbd>
+              <kbd class="kbd">/</kbd>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="play-button">Life:<img class="btn-img" src="./images/dollar.svg" alt=""> <span
+                id="life">05</span></button>
+            <button class="play-button">Score: <img class="btn-img" src="./images/heart.svg" alt=""> <span
+                id="score">0</span></button>
+          </div>
         </div>
       </div>
-
-      <div class="kbd-container">
-        <div>
-          <div class="kbd-first-line">
-            <kbd id="q" class="kbd">q</kbd>
-            <kbd id="w" class="kbd">w</kbd>
-            <kbd id="e" class="kbd">e</kbd>
-            <kbd id="r" class="kbd">r</kbd>
-            <kbd id="t" class="kbd">t</kbd>
-            <kbd id="y" class="kbd">y</kbd>
-            <kbd id="u" class="kbd">u</kbd>
-            <kbd id="i" class="kbd">i</kbd>
-            <kbd id="o" class="kbd">o</kbd>
-            <kbd id="p" class="kbd">p</kbd>
-          </div>
-          <div class="kbd-second-line">
-            <kbd id="a" class="kbd">a</kbd>
-            <kbd id="s" class="kbd">s</kbd>
-            <kbd id="d" class="kbd">d</kbd>
-            <kbd id="f" class="kbd">f</kbd>
-            <kbd id="g" class="kbd">g</kbd>
-            <kbd id="h" class="kbd">h</kbd>
-            <kbd id="j" class="kbd">j</kbd>
-            <kbd id="k" class="kbd">k</kbd>
-            <kbd id="l" class="kbd">l</kbd>
-          </div>
-          <div class="kbd-third-line">
-            <kbd id="z" class="kbd">z</kbd>
-            <kbd id="x" class="kbd">x</kbd>
-            <kbd id="c" class="kbd">c</kbd>
-            <kbd id="v" class="kbd">v</kbd>
-            <kbd id="b" class="kbd">b</kbd>
-            <kbd id="n" class="kbd">n</kbd>
-            <kbd id="m" class="kbd">m</kbd>
-            <kbd class="kbd">/</kbd>
-          </div>
-        </div>
-        <div class="button-container">
-          <button class="play-button">Life: <span id="life">05</span></button>
-          <button class="play-button">Score: <span id="score">0</span></button>
-        </div>
-      </div>
-
 
     </section>
 
@@ -76,7 +83,7 @@
 
       <div class="score-board-container">
         <div class="score-board">
-          <div>
+          <div class="score-element">
             <h1 class="score-board-text">Game over</h1>
             <h1 class="score-board-text">Your Score: <span id="total-score">0</span></h1>
             <button id="play-again" class="play-button">Play Again</button>

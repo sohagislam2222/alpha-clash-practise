@@ -13,29 +13,32 @@ function playStart() {
 let isGamePlay = false;
 let life = 5;
 let count = 0;
-
+let audio = new Audio();
 document.addEventListener('keyup', function (event) {
   const keyPressed = event.key;
-  if (isGamePlay == false) {
+
+  if (keyPressed === 'Escape') {
+    playStart();
+    location.reload();
+  }
+  else if (isGamePlay == false) {
     return;
   }
   const currentElement = document.getElementById('current-alphabet');
   const currentAlpha = currentElement.innerText.toLowerCase();
 
   if (keyPressed === currentAlpha) {
-    let mySound = new Audio('../audio/succes.mp3')
-    mySound.play()
+    audio.src = "../audio/success.mp3"
+    audio.play()
     count++;
     setInnerTextById('score', count);
     removeBgById(keyPressed);
     playStart();
-
-
   }
 
   else {
-    let mySound = new Audio('../audio/error.mp3')
-    mySound.play()
+    audio.src = "../audio/wrong.mp3"
+    audio.play()
     life--;
     let restLife = getInnerTextById('life');
     setInnerTextById("life", life);
