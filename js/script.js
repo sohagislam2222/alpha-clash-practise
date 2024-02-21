@@ -13,7 +13,7 @@ function playStart() {
 let isGamePlay = false;
 let life = 5;
 let count = 0;
-const audio = new Audio();
+
 document.addEventListener('keyup', function (event) {
   const keyPressed = event.key;
   if (isGamePlay == false) {
@@ -23,8 +23,8 @@ document.addEventListener('keyup', function (event) {
   const currentAlpha = currentElement.innerText.toLowerCase();
 
   if (keyPressed === currentAlpha) {
-    audio.src = "../audio/succes.mp3";
-    audio.play();
+    let mySound = new Audio('../audio/succes.mp3')
+    mySound.play()
     count++;
     setInnerTextById('score', count);
     removeBgById(keyPressed);
@@ -34,8 +34,8 @@ document.addEventListener('keyup', function (event) {
   }
 
   else {
-    audio.src = "../audio/error.mp3";
-    audio.play();
+    let mySound = new Audio('../audio/error.mp3')
+    mySound.play()
     life--;
     let restLife = getInnerTextById('life');
     setInnerTextById("life", life);
