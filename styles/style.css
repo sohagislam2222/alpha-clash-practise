@@ -70,7 +70,10 @@ p{
   justify-content: space-around;
 }
 
+.kbd-container{
 
+  margin-top: 50px;
+}
 
 
 .arth-board-container{
@@ -93,7 +96,7 @@ align-items: center;
   background-color: #010313;
   color: white;
   width: 60%;
-  height: 50px;
+  height: 80px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 10px 15px;
